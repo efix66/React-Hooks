@@ -11,4 +11,9 @@ Mastering React hooks
 - cand vrem sa folosim o functie in useEfeect, tot timpul vom declara creea acea functiie in useEffect()
 - data fetchin cu useeEfect si axios
 
-2 useReducer - inlocuieste useState
+2 useContext
+
+- Sunt 3 pasi in utilizarea useContext
+
+1. Creare Context (const UserContext = React.createContext())
+2. Punerea componenteti in UserContext.Provider/> si atribuite o valoare -value={}
