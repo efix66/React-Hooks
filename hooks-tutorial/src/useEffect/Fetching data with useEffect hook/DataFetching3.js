@@ -10,7 +10,7 @@ const DataFetching3 = () => {
 	//State for getting id post
 	const [id, setId] = useState(1);
 
-	//State fot fetch post on button click
+	//State for fetch post on button click
 	const [fetchOnButtonClick, setFetchOnButtonClick] = useState(1);
 
 	const fetchPost = () => {
