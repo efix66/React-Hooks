@@ -5,9 +5,11 @@ const HookCounterOne = () => {
 	const [name, setName] = useState("");
 
 	useEffect(() => {
-		console.log("useEffect - Updating document title");
+		console.log("UseEffect - Updating document title");
 		document.title = `You clicked ${count} times`;
 	}, [count]);
+	// useEffect va fi executat doar cand valuare count se schimba
+	// rulare  efect conditionat
 
 	return (
 		<div>
@@ -16,8 +18,9 @@ const HookCounterOne = () => {
 				value={name}
 				onChange={(e) => setName(e.target.value)}
 			/>
-
-			<button onClick={() => setCount(count + 1)}>Click {count} times</button>
+			<button onClick={() => setCount((prevCount) => prevCount + 1)}>
+				Click {count} times
+			</button>
 		</div>
 	);
 };

@@ -6,9 +6,11 @@ Mastering React hooks
 
 - Performeaza efecte secundare in componente functionale, este o functie ce primeste ca parametru alta functie care va fi executata la fiecare randare a componentei
   Ruleaza dupa primul render si dupa fiecare update al componentei.
+  dACA DORIM SA RULEZE DOAR ODATA LA PRIMUL RENDER, PASAM DEPENDINTA [] EMPTY ARRAY
   Pentru a rula un efect conditionat, trebuie sa pasam un al doile parametru si anume un array "[]" unde specificam ce prop sau state vrem sa fie executat. In concluzie daca vrem sa rulam in mod conditionat un efect, il specificam in al doilea parametru "[]".
 - useEffect cu cleanup, in corpul functiei facem return la o functie anonima unde elimina codul dupa ce componenta a fost inlaturata componenta.
 - cand vrem sa folosim o functie in useEfeect, tot timpul vom declara, creea acea functie in useEffect()
+
 - data fetching cu useeEfect si axios
 
   2.useContext
